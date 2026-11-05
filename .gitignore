@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.vite/
+coverage/
+work/
+*.tsbuildinfo
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+.vercel/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# OS and package-manager noise
+.DS_Store
+Thumbs.db
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
