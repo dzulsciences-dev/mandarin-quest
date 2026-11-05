@@ -11,3 +11,29 @@
 @media(max-width:760px){.pinyin-starter{padding:10px;gap:9px;margin-bottom:10px}.pinyin-starter-mark{width:34px;height:34px;font-size:19px}.pinyin-starter b{font-size:11px}.pinyin-starter small{font-size:7px}.pinyin-hero{gap:10px;padding:13px}.pinyin-big{font-size:18px;padding:12px 8px}.pinyin-hero h1{font-size:16px}.pinyin-hero p{font-size:8px}.tone-grid{grid-template-columns:repeat(2,1fr);gap:7px}.tone-card{min-height:138px;padding:10px}.tone-card:last-child{grid-column:1/-1;min-height:100px}.tone-syllable{font-size:26px}.tone-card p{font-size:8px}.pinyin-context{padding:10px}.pinyin-context p{font-size:8px}.pinyin-actions{gap:9px;flex-wrap:wrap}.pinyin-actions .text-button{font-size:9px}}
 
 .usage-note{display:flex;align-items:flex-start;gap:5px;font-size:8px;line-height:1.45;color:#938575;margin-top:7px}.usage-note svg{flex-shrink:0;color:#c69a68;margin-top:1px}
+
+:root{--hanzi-font:"Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei UI","Microsoft YaHei",system-ui,sans-serif;--pinyin-font:"DM Sans","Avenir Next",system-ui,sans-serif;--hanzi-vocabulary:88px;--hanzi-flashcard:88px;--hanzi-quiz:72px;--hanzi-sentence:48px;--hanzi-learning-card:64px;--pinyin-vocabulary:44px;--pinyin-flashcard:44px;--pinyin-quiz:36px;--pinyin-sentence:30px;--pinyin-learning-card:34px}
+.hanzi-display,.sentence-display{font-family:var(--hanzi-font);font-weight:700;line-height:1.45;letter-spacing:0;overflow-wrap:anywhere;word-break:normal}
+.pinyin-display{font-family:var(--pinyin-font);font-weight:700;line-height:1.6;padding:.16em 0 .22em;font-variant-ligatures:none;font-feature-settings:"mark" 1;overflow-wrap:anywhere}
+.phrase-card{display:block;padding:24px 22px 22px;overflow:visible}
+.phrase-content{width:100%;min-width:0}
+.phrase-word{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:100%;min-width:0;margin:12px auto 22px;text-align:center}
+.phrase-word b,.phrase-word .hanzi-display{font-family:var(--hanzi-font);font-size:var(--hanzi-vocabulary);font-weight:700;line-height:1.45;letter-spacing:0;padding-block:.04em .1em;overflow-wrap:anywhere}
+.phrase-word span:not(.hanzi-display),.phrase-word .pinyin-display{font-family:var(--pinyin-font);font-size:var(--pinyin-vocabulary);font-weight:700;line-height:1.6;padding-block:.14em .2em;overflow-wrap:anywhere}
+.phrase-translations{display:flex;flex-direction:column;gap:5px;margin:14px 0 10px;font-size:22px;line-height:1.5;overflow-wrap:anywhere}
+.example-box>b,.example-box .sentence-display,.pattern-example>b,.pattern-example .sentence-display{font-family:var(--hanzi-font);font-size:var(--hanzi-sentence);line-height:1.5;padding-block:.04em .1em;overflow-wrap:anywhere}
+.example-pinyin,.example-box .example-pinyin{font-family:var(--pinyin-font);font-size:var(--pinyin-sentence);line-height:1.6;padding-block:.12em .2em;overflow-wrap:anywhere}
+.question-card{min-height:220px;overflow:visible;padding:30px 22px 32px}
+.question-card h2.hanzi-question{font-family:var(--hanzi-font);font-size:var(--hanzi-quiz);line-height:1.5;letter-spacing:0;padding-block:.04em .1em;overflow-wrap:anywhere}
+.question-pinyin{font-family:var(--pinyin-font);font-size:var(--pinyin-quiz);line-height:1.6;padding-block:.14em .2em;overflow-wrap:anywhere}
+.answer-option{font-size:24px;line-height:1.5;min-height:68px;padding:14px;overflow-wrap:anywhere}
+.answer-option.hanzi-choice{font-size:48px}
+.sentence-slots{min-height:96px;font-size:40px;line-height:1.5;padding:16px;overflow-wrap:anywhere}
+.pattern-form{font-size:40px;line-height:1.5;padding:16px 14px;overflow-wrap:anywhere}
+.pattern-pinyin{font-family:var(--pinyin-font);font-size:30px;line-height:1.6;padding-block:.12em .2em}
+.tone-syllable,.pinyin-big{font-family:var(--pinyin-font);font-size:48px;line-height:1.6;padding-block:.14em .2em;white-space:normal}
+.tone-example b,.tone-example .hanzi-display{font-family:var(--hanzi-font);font-size:var(--hanzi-learning-card);line-height:1.45}
+.tone-card p,.pinyin-context p,.pattern-card>p,.tutor-note p{font-size:18px;line-height:1.55}
+.usage-note,.phrase-category,.phrase-index,.example-label,.quiz-top,.question-label,.quiz-actions .skip-button,.answer-counter{font-size:16px;line-height:1.5}
+@media(max-width:760px){:root{--hanzi-vocabulary:80px;--pinyin-vocabulary:40px}.phrase-card{padding:20px 16px}.phrase-word b,.phrase-word .hanzi-display{font-size:80px}.phrase-word span:not(.hanzi-display),.phrase-word .pinyin-display{font-size:40px}.example-box>b,.example-box .sentence-display,.pattern-example>b,.pattern-example .sentence-display{font-size:48px}.example-pinyin,.example-box .example-pinyin{font-size:30px}.question-card{padding:28px 16px 30px}.question-card h2.hanzi-question{font-size:72px}.question-pinyin{font-size:36px}.answer-list{grid-template-columns:1fr}.answer-option{font-size:24px}.answer-option.hanzi-choice{font-size:48px}.tone-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.tone-card{min-height:220px;padding:15px 12px}.tone-syllable,.pinyin-big{font-size:44px}}
+@media(max-width:390px){.page-content{overflow-x:hidden}.phrase-word b,.phrase-word .hanzi-display{font-size:80px}.phrase-word span:not(.hanzi-display),.phrase-word .pinyin-display{font-size:40px}.question-card h2.hanzi-question{font-size:72px}.question-pinyin{font-size:36px}.tone-grid{grid-template-columns:1fr}.tone-card{min-height:190px}}
